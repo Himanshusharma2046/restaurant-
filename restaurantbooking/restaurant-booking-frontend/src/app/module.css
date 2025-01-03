@@ -1,0 +1,153 @@
+/* Body styles */
+body {
+    background-color: #f5f5f5; /* Light background color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Adjust for full screen centering */
+    padding-top: 20px;
+  }
+  
+  /* Header styles for "Restaurant Booking" */
+  h1 {
+    font-size: 50px;
+    color: #4caf50; /* Green color for the heading */
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+  }
+  
+  /* Main container with a border */
+  .main-container {
+    width: 60%; /* Reduce width of the form */
+    margin: 30px auto; /* Center the container */
+    padding: 40px;
+    background-color: #fff9e6; /* Light yellow background */
+    border-radius: 15px;
+    border: 3px solid #4caf50; /* Green border around the entire container */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styles */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input and Select styles */
+  input, select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+  }
+  
+  /* Input focus and hover effects */
+  input:focus, select:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5); /* Green shadow on focus */
+  }
+  
+  /* Button styles */
+  button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #4caf50; /* Green background for button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Success and error messages */
+  .success {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e8f5e9; /* Green background */
+    color: #388e3c; /* Dark green text */
+  }
+  
+  .error {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffebee; /* Red background */
+    color: #d32f2f; /* Dark red text */
+  }
+  
+  /* Booking Summary section styles */
+  .summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background */
+    border-radius: 10px;
+    border: 2px solid #4caf50; /* Green border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Summary heading styles */
+  .summary h2 {
+    font-size: 28px;
+    color: #388e3c; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  /* Summary paragraph styles */
+  .summary p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    .main-container {
+        padding: 15px;
+        margin: 20px;
+    }
+  
+    h1 {
+        font-size: 28px;
+    }
+  
+    input, select, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+  
+    .summary {
+        padding: 15px;
+    }
+  
+    .summary h2 {
+        font-size: 22px;
+    }
+  
+    .summary p {
+        font-size: 16px;
+    }
+  }
+  
